@@ -33,8 +33,7 @@ function multi(a,b){
 return a*b;
 }
 
-var r=multicacion(n1,n2);
-
+var r=multi(n1,n2);
 console.log(`R= ${r}`);
 break;
 
@@ -64,44 +63,22 @@ break;
 
     
 case 6:
-var a=parseInt(prompt("Inroduce valor de a"));   
-var b=parseInt(prompt("Inroduce valor de b"));
-var c=parseInt(prompt("Inroduce valor de c"));   
-function x1(a, b, c,r)
-{
-if(a !=0){
-r=b*b-4*a*c;
+var a = parseInt(prompt("Valor de a"));   
+var b = parseInt(prompt("Valor de b"));
+var c = parseInt(prompt("Valor de c"));   
+ var d = -1*b;
+ var e = Math.pow(b,2);
+ var f = 4*a*c;
+ var g = e-f;
+ var h = Math.sqrt(g);
+ var i = 2*a;
+ var j = d+h;
+ var k = d-h;
 
-if(r>0){
-return(-b + Math.sqrt(r))/(2*a);
-}
-else{
-    console.log("Las raices son numeros complejos");
-}
-}else{
-    console.log("Esto no es una ecuacion de 2do grado");
-}
-}
-var re=x1(a,b,c);
-console.log(`x1= ${re}`);
-
-function x2(a, b, c,r)
-{
-if(a !=0){
-r=b*b- 4*a*c;
-if(r>=0){
-return(-b - Math.sqrt(r))/(2*a);
-}
-else{
-console.log("Las raices son numeros complejos");
-}
-}else{
-    console.log("Esto no es una ecuacion de 2do grado");
-}
-}
-var r2=x2(a,b,c);
-console.log(`x2: ${r2}`);
-break;
+ var res1= j/i;
+ var res2= k/i;
+ console.log(`resultado 1: ${res1.toFixed(2)}\n resultado 2: ${res2.toFixed(2)}`);
+ break;
 
 case 7:
 var n1=parseInt(prompt("Introduce Valor del numero 01"));
